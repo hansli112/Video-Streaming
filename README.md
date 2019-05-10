@@ -6,6 +6,7 @@ Intro to Computer Network term project
 
 - Functions(about Network)
 
-	- AES Encryption (mode: ECB, CBC, OFB, CFB, CTR, XTS)
+	- Security
+		- AES Encryption (choose one of modes: ECB, CBC, OFB, CFB, CTR, XTS)
 
 - other Functions
