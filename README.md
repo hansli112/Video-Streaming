@@ -30,7 +30,7 @@ Streaming media is multimedia that is constantly received by and presented to an
 	- Security
 		- AES Encryption (choose one of modes: ECB, CBC, OFB, CFB, CTR, XTS)
 
-- other Functions
+- Other Functions
 
 	- Message system
 		- Allow users instantly to upload ideas and thoughts about the vedio.
