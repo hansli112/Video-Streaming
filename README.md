@@ -18,6 +18,7 @@ Streaming media is multimedia that is constantly received by and presented to an
 				- Step
 					- Flask provides native support for streaming responses by using generator functions.
 					- The generator is a special function that can be interrupted and restored.
+					- Video streaming can generate large data tables without having to put the entire table in memory
 
 
 - Functions(about Network)
