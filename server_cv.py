@@ -7,9 +7,8 @@ import struct
 
 def getIP():
     myname = socket.getfqdn(socket.gethostname())
-    get_s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    get_s.connect(('8.8.8.8', 0))
-    ip = get_s.getsockname()[0]
+    #get_s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    ip = socket.gethostbyname(myname)
     return ip
 
 
