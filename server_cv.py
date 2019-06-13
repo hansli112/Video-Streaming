@@ -6,10 +6,9 @@ import numpy as np
 import struct 
 
 def getIP():
-    myname = socket.getfqdn(socket.gethostname())
-    #get_s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    ip = socket.gethostbyname(myname)
-    return ip
+    host_name = socket.gethostname()
+    host_ip = socket.gethostbyname(host_name)
+    return host_ip
 
 
 #設定uploader的socket
