@@ -23,6 +23,7 @@ while True:
     data = data[msg_size:]
     
     frame=pickle.loads(frame_data)
+    cv2.imshow('client_frame', frame)
 
     key = cv2.waitKey(10)
     if (key == 27) or (key == 113):

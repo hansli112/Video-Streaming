@@ -68,11 +68,10 @@ while True:
     
     frame=pickle.loads(frame_data)
     ###以下是播放
-    if pause == 0:
-            cv2.imshow('server_frame',frame)
+    cv2.imshow('server_frame',frame)
     key = cv2.waitKey(10)
     if (key == 27) or (key == 113):
-        break 
+        pass #break 
     if key == 112:
         pause += 1
         pause %= 2

@@ -12,6 +12,7 @@ def display():
     pause = 0
     while True:
         ret,frame=cap.read()
+		#cv2.imshow('your_frame', frame)
         key = cv2.waitKey(10)
         if (key == 27) or (key == 113):
             pass #break 
