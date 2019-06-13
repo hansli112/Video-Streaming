@@ -24,8 +24,9 @@ def display():
 
 cap=cv2.VideoCapture(0)                 ###開啟攝影機
 ###聯網
+HOST = input("請輸入想連結的IP:")
 uploader=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-uploader.connect(('localhost',8089))
+uploader.connect((HOST,8089))
 ###做出一個thread
 t = threading.Thread(target = display)
 t.start()

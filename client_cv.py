@@ -5,8 +5,9 @@ import sys
 import pickle
 import struct 
 ####大致上與server相同
+HOST = input("請輸入想連結的IP:")
 watcher=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-watcher.connect(('localhost',8080))
+watcher.connect((HOST,8080))
 data = b''
 payload_size = struct.calcsize("L") 
 pause = 0

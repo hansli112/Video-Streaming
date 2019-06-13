@@ -5,8 +5,17 @@ import pickle
 import numpy as np
 import struct 
 
+def getIP():
+    myname = socket.getfqdn(socket.gethostname())
+    get_s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    get_s.connect(('8.8.8.8', 0))
+    ip = get_s.getsockname()[0]
+    return ip
+
+
 #設定uploader的socket
-HOST=''
+HOST=getIP()
+print("your IP is",HOST)
 PORT=8089
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 print('Socket created')
@@ -14,6 +23,7 @@ s.bind((HOST,PORT))
 print('Socket bind complete')
 s.listen(10)
 print('Socket now listening')
+
 #
 #設定clinet的socket
 PORT2 = 8080
